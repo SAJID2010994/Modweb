@@ -1,0 +1,69 @@
+@font-face {
+  font-family: minecraft;
+  src: url("Minecraft.ttf");
+}
+*{
+  margin:0;
+  padding: 0;
+}
+html,body{
+  overflow: hidden hidden;
+}
+p{
+
+  font-family: minecraft;
+  font-size: 10vw;
+  width: 70vw;
+  margin-top: 5vh;
+  margin-left: 5vh;
+}
+.main{
+    margin-left: 13vw;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  height:fit-content;
+}
+#bg{
+  position: absolute;
+z-index: -1;
+  width: 100vw;
+    height: 100vh;
+}
+#modbtn{
+  width: 70vw;
+
+}
+#mapbtn{
+  margin-left: 2vw;
+  margin-top: -13vh;
+  width: 70vw;
+}
+.promotion{
+  
+  margin-top: 2vh;
+  margin-left:4vw;
+  display: flex;
+  justify-content: space-between;
+}
+label{
+  font-family: minecraft;
+  font-size: 10vw;
+  
+}
+#logo{
+ border:black;
+ outline: black;
+ border-radius: 100px;
+ border-width: 1000px;
+ width:25vw;
+ height:25vw;
+ margin-top: -1.5vh;
+ margin-right: -1vw;
+}
+#stick{
+  margin-top: -4vh;
+  width: 25vh;
+margin-left:-75vw;
+}
