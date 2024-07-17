@@ -11,15 +11,18 @@ html,body{
 }
 p{
 
+
+word-break: none;
+word-wrap: none;
   font-family: minecraft;
-  font-size: 10vw;
-  width: 70vw;
+  font-size: 8vw;
+  width: 100vw;
   margin-top: 5vh;
-  margin-left: 5vh;
+  margin-left: -10vw;
 }
 .main{
     margin-left: 13vw;
-  margin-top: 5vh;
+  margin-top: 1vh;
   display: flex;
   flex-direction: column;
   width: 70vw;
