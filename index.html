@@ -3,28 +3,40 @@
 
 <head>
   <meta charset="UTF-8">
+
+  <title></title>
+
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
   <link rel="stylesheet" href="main.css">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9260989568490490"
-     crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-  
-  <img src="bg1.jpeg" alt="bg1.jpeg" id="bg">
-  <div class="promotion">
-    <label for="Be Center">Be Center</label>
 
-    <img src="stick.png" alt="stick.png" id="stick">
-    <img src="logo.png" alt="logo.png" id="logo">
-  </div>
+  <img src="resources/bg1.jpeg" id="bg">
+  <nav class="promotion">
+    <label for="MC CENTER">MC Center</label>
+    <ul>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="">MC SERVER</a></li>
+      <li><a href="">DISCORD</a></li>
+    </ul>
+  </nav>
+  <p>Mods And Maps for Minecraft BEDROCK</p>
 
   <div class="main">
-<p>Mods And Maps for Minecraft</p>
- <img src="modbtn.png" alt="modbtn.png" id="modbtn">
- <img src="mapbtn.png" alt="mapbtn.png" id="mapbtn">
+
+    <button id="modbtn">MODS</button>
+    <button id="mapbtn">MAPS</button>
   </div>
+  <a id="mod" href="mods/search.html" style="display: none;"></a>
+  <script>
+    document.getElementById('modbtn').onclick = () => {
+      document.getElementById('mod').click()
+    }
+  </script>
 </body>
 
 </html>
