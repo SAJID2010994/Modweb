@@ -1,4 +1,4 @@
-import {DataBase} from '../resources/custom-modules.js'
+
 var modsinfo=[{title:'Block buster addon mcpe',link:'../resources/stick.png',thmb:'thmb.png',pass:'abcd'},{title:'Minecraft but I became the KING !',link:'../index.html',thmb:'thmb2.png'},{title:'Minecraft sky mod',link:'../index.html',thmb:'thmb3.png'},{title:'Block buster addon mcpe',link:'../index.html',thmb:'thmb.png'}]
     var mod=document.getElementsByClassName('mod')
     
