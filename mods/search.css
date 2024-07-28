@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: minecraft;
+    scrollbar-color: none;
+    scrollbar-width: 0px;
+}
+@font-face {
+    font-family: minecraft;
+    src: url("../resources/Minecraft.ttf");
+  }
+  @font-face {
+    font-family: komika;
+    src: url("../resources/KOMIKAX_.ttf");
+  }
+    @property --angle{
+    syntax:"<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  @keyframes anime{
+    from{
+    --angle: 0deg;
+    }
+    to{
+      --angle: 360deg;
+    }
+  }
+  body{
+    overflow: hidden hidden;
+    background-color: #151320;
+    scrollbar-color: none;
+    scrollbar-width: 0px;
+  }
+#bg{
+    position: absolute;
+  z-index: -1;
+    width: 100vw;
+      height: 100vh;
+  }
+  #search{
+      width: 76vw;
+      height: 9vh;
+      font-family: minecraft;
+      outline: none;
+      background: white;
+      font-size: 4vw;
+  }
+  .search{
+      display: flex;
+      height: 8vh;
+  }
+  #srch{
+      font-family: minecraft;
+    width: 30%;
+    height: 113%;
+    display: inline;
+    
+    color: white;
+    flex-grow: 1;
+    top: 1vh;
+border: 1px solid #1E1E1F;
+letter-spacing: 0.5vw;
+    font-size: 6vw;
+    background-color: #3C8527/*rgba(7, 211, 99, 0.418)*/;
+    
+  }
+  .mods-container{
+    display: flex;
+      flex-direction: column;
+    
+      overflow-y:scroll;
+      margin-top: 3vh;
+      margin-left: 9vw;
+      height: 90vh; 
+      align-content: space-between;
+
+  }
+  .mod img{
+    width: 80vw;
+    border-color: white;
+    border-radius: 0.3rem;
+    
+  }
+  .mod label{
+    font-size: 3rem;
+    color: white;
+   /* font-weight: 1000px;*/
+   margin-left: 3vw;
+   font-family: monospace;
+  }
+  .mod{
+    /* background-color: rgba(32, 18, 18, 0.616); */
+    position: relative;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0.2);
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    border-radius: 0.3rem;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    
+ /*   background-image: url("../resources/bg1.jpeg");*/
+ background-color: #2F303A;
+    margin-bottom: 15vh;
+  }
+      .mod::after ,mod::before{
+    content: '';
+    position: relative;
+    background-image: conic-gradient(from var(--angle),hsla(360, 37%, 51%, 1),#24995D,#246899,red,#672499,#24994D,hsla(124, 100%, 50%, 0.97));
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: 0.3rem;
+    position: absolute;
+    padding: 3px;
+    z-index: -1;
+    animation: anime 3s linear infinite;
+  }
+  .mod::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+  }
+  @media (orientation:landscape) {
+    #srch{
+        position: relative;
+        width: 1%;
+        height: 122%;
+        margin-top: 1vh;
+        display: inline;
+        flex-grow: 1;
+        font-size: 1vw;
+        top: -1vh;
+        letter-spacing: 0.3vw;
+    }
+    .mod img{
+      width: 25vw;
+
+    }
+    .mods-container{
+      flex-direction: row;
+      flex-wrap: wrap;
+width: 99vw;
+justify-content: space-between;
+margin-left: 1vw;
+height: 90vh;
+align-content: none;
+
+    }
+    #search{
+      font-size: 1.5vw;
+    }
+    .mod label{
+      font-size: 2rem;
+    }
+    .mod{
+      width: 25vw;
+display: flex;
+flex-direction: column;
+height: fit-content;
+    }
+  }
