@@ -67,7 +67,7 @@ padding-right: 3vw;
 padding-top: 2vh;
 background-color: rgba(68, 197, 29, 0.76);
 height: 6vh;
-font-size: 4vw;
+font-size: 3vw;
 border: 1vw solid black;
 }
 nav ul{
@@ -112,7 +112,7 @@ margin-left:-75vw;
   .promotion{
     width: 97vw;
     border: 0.4vw solid black;
- padding-right:3vw;
+  padding-right: 3vw;
   padding-top: 2vh;
   background-color: rgba(68, 197, 29, 0.76);
   height: 10vh;
