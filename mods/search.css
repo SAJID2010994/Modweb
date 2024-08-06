@@ -108,7 +108,7 @@ letter-spacing: 0.5vw;
       .mod::after ,mod::before{
     content: '';
     position: relative;
-    background-image: conic-gradient(from var(--angle),hsla(360, 37%, 51%, 1),#24995D,#246899,yellow,#672499,#24994D,hsla(124, 100%, 50%, 0.97));
+    background-image: conic-gradient(from var(--angle),#5ddcff, #3c67e3 43%, #4e00c2,#5ddcff, #3c67e3 43%, #4e00c2,#5ddcff, #3c67e3 43%, #4e00c2);
     width: 100%;
     height: 100%;
     top: 50%;
@@ -118,11 +118,12 @@ letter-spacing: 0.5vw;
     position: absolute;
     padding: 3px;
     z-index: -1;
-    animation: anime 3s linear infinite;
+    animation: anime 5s linear infinite;
+    
   }
   .mod::before{
     filter: blur(1.5rem);
-    opacity: 0.5;
+    
   }
   @media (orientation:landscape) {
     #srch{
