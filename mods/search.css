@@ -68,13 +68,11 @@ letter-spacing: 0.5vw;
   .mods-container{
     display: flex;
       flex-direction: column;
-    
+    width:99vw;
       overflow-y:scroll;
       margin-top: 3vh;
-      margin-left: 9vw;
-      height: 90vh; 
-      align-content: space-between;
-
+      height: 95vh; 
+   align-items: space-around;
   }
   .mod img{
     width: 80vw;
@@ -92,20 +90,20 @@ letter-spacing: 0.5vw;
   .mod{
     /* background-color: rgba(32, 18, 18, 0.616); */
     position: relative;
-    box-shadow: 0px 0px 20px rgb(0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4);
     width: 80vw;
     display: flex;
     flex-direction: column;
     height: fit-content;
     border-radius: 0.3rem;
-    margin-left: 1vw;
-    margin-top: 1vh;
+    align-self: center;
+   margin-top: 4vh;
     
  /*   background-image: url("../resources/bg1.jpeg");*/
  background-color: #2F303A;
     margin-bottom: 15vh;
   }
-      .mod::after ,mod::before{
+    /*  .mod::after ,mod::before{
     content: '';
     position: relative;
     background-image: conic-gradient(from var(--angle),#5ddcff, #3c67e3 43%, #4e00c2,#5ddcff, #3c67e3 43%, #4e00c2,#5ddcff, #3c67e3 43%, #4e00c2);
@@ -124,7 +122,7 @@ letter-spacing: 0.5vw;
   .mod::before{
     filter: blur(1.5rem);
     
-  }
+  }*/
   @media (orientation:landscape) {
     #srch{
         position: relative;
