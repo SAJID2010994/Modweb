@@ -5,6 +5,35 @@
     scrollbar-color: none;
     scrollbar-width: 0px;
 }
+@keyframes rotateColors {
+    0% {
+        box-shadow: 
+            0 0 5px #00FFFF,
+            0 0 10px #00FFFF,
+            0 0 15px #00FFFF,
+            0 0 20px #FF00FF,
+            0 0 25px #FF00FF,
+            0 0 30px #FF00FF;
+    }
+    50% {
+        box-shadow: 
+            0 0 5px #FF00FF,
+            0 0 10px #FF00FF,
+            0 0 15px #FF00FF,
+            0 0 20px #00FFFF,
+            0 0 25px #00FFFF,
+            0 0 30px #00FFFF;
+    }
+    100% {
+        box-shadow: 
+            0 0 5px #00FFFF,
+            0 0 10px #00FFFF,
+            0 0 15px #00FFFF,
+            0 0 20px #FF00FF,
+            0 0 25px #FF00FF,
+            0 0 30px #FF00FF;
+    }
+}
 @font-face {
     font-family: minecraft;
     src: url("../resources/Minecraft.ttf");
@@ -90,7 +119,13 @@ letter-spacing: 0.5vw;
   .mod{
     /* background-color: rgba(32, 18, 18, 0.616); */
     position: relative;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4);
+       box-shadow: 0 0 5px #00FFFF,
+   0 0 10px #00FFFF,
+   0 0 15px #00FFFF,
+   0 0 20px #FF00FF,
+   0 0 25px #FF00FF,
+   0 0 30px #FF00FF;
+   animation: rotateColors 3s infinite linear;
     width: 80vw;
     display: flex;
     flex-direction: column;
