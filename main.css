@@ -46,6 +46,10 @@ z-index: -1;
 box-shadow: 0px 0px 20px black;
 color: white;
 font-size: 5vw;
+transition: scale 2s;
+}
+#modbtn:active,#mapbtn:active{
+  scale: 0.5;
 }
 h1{
   font-family: minecraft;
@@ -59,6 +63,7 @@ box-shadow: 0px 0px 20px black;
 color: white;
 font-size: 5vw;
 border-radius: 3px;
+transition: scale 1s;
 }
 .promotion{
   width: 95vw;
