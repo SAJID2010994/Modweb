@@ -6,11 +6,5 @@
         "thmb":"thmb.png",
         "pass":"abcd",
         "vid":"https://youtu.be/48kdn2dbUfs"
-    },
-    {
-        "title":"Jamuna tv live",
-        "link":"../resources/stick.png",
-        "thmb":"https://i.ytimg.com/vi/Iy0GtwWkiGE/hq720_live.jpg?sqp=CMiYx7UG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAFg7CFsayO0kayoE8vFIcedtVh9A",
-        "pass":"abcd"
     }
 ]
