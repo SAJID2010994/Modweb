@@ -38,6 +38,10 @@
     font-family: minecraft;
     src: url("../resources/Minecraft.ttf");
   }
+@font-face {
+    font-family: minecrafter;
+    src: url("../resources/Minecrafter.Reg.ttf");
+  }
   @font-face {
     font-family: komika;
     src: url("../resources/KOMIKAX_.ttf");
@@ -114,7 +118,7 @@ letter-spacing: 0.5vw;
     color: white;
    /* font-weight: 1000px;*/
    margin-left: 3vw;
-   font-family: monospace;
+   font-family: minecrafter;
   }
   .mod{
     /* background-color: rgba(32, 18, 18, 0.616); */
