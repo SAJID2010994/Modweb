@@ -10,31 +10,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
   <link rel="stylesheet" href="main.css">
-
+  
 </head>
 
 <body>
-
-  <img src="resources/bg1.jpeg" id="bg">
-  <nav class="promotion">
+   <nav class="promotion">
     <label for="MC CENTER">MC Center</label>
     <ul>
-      <li><a href="about.html">ABOUT</a></li>
-      <li><a href="">MC SERVER</a></li>
-      <li><a href="">DISCORD</a></li>
+      <li><a href="about.html" style="color:aqua;">ABOUT</a></li>
+      <li><a href="" style="color:crimson;">MC SERVER</a></li>
+      <li><a href="" style="color:blue;">DISCORD</a></li>
     </ul>
   </nav>
-  <p>Mods And Maps for Minecraft BEDROCK</p>
-
+  <p id="one">Mods And Maps for Minecraft</p>
+  <p id="two">BEDROCK</p>
   <div class="main">
-
     <button id="modbtn">MODS</button>
     <button id="mapbtn">MAPS</button>
   </div>
   <a id="mod" href="mods/search.html" style="display: none;"></a>
   <script>
     document.getElementById('modbtn').onclick = () => {
-  setTimeout(()=>{document.getElementById('mod').click()},500)
+      document.getElementById('mod').click()
     }
   </script>
 </body>

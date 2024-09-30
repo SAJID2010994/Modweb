@@ -5,7 +5,7 @@
     scrollbar-color: none;
     scrollbar-width: 0px;
 }
-@keyframes rotateColors {
+/* @keyframes rotateColors {
     0% {
         box-shadow: 
             0 0 5px #00FFFF,
@@ -33,7 +33,7 @@
             0 0 25px #FF00FF,
             0 0 30px #FF00FF;
     }
-}
+} */
 @font-face {
     font-family: minecraft;
     src: url("../resources/Minecraft.ttf");
@@ -45,11 +45,6 @@
   @font-face {
     font-family: komika;
     src: url("../resources/KOMIKAX_.ttf");
-  }
-    @property --angle{
-    syntax:"<angle>";
-    initial-value: 0deg;
-    inherits: false;
   }
   @keyframes anime{
     from{
@@ -114,22 +109,17 @@ letter-spacing: 0.5vw;
     
   }
   .mod label{
-    font-size: 2rem;
+    font-size: 2em;
     color: white;
    /* font-weight: 1000px;*/
-   margin-left: 3vw;
+   text-align: center;
    font-family: minecrafter;
   }
   .mod{
     /* background-color: rgba(32, 18, 18, 0.616); */
     position: relative;
-       box-shadow: 0 0 5px #00FFFF,
-   0 0 10px #00FFFF,
-   0 0 15px #00FFFF,
-   0 0 20px #FF00FF,
-   0 0 25px #FF00FF,
-   0 0 30px #FF00FF;
-   animation: rotateColors 3s infinite linear;
+       box-shadow: 1px 1px 49px 7px #2c373d;
+   /* animation: rotateColors 3s infinite linear; */
     width: 80vw;
     display: flex;
     flex-direction: column;
@@ -137,7 +127,6 @@ letter-spacing: 0.5vw;
     border-radius: 0.3rem;
     align-self: center;
    margin-top: 4vh;
-    
  /*   background-image: url("../resources/bg1.jpeg");*/
  background-color: #2F303A;
     margin-bottom: 15vh;

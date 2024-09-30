@@ -2,24 +2,86 @@
   font-family: minecraft;
   src: url("resources/Minecraft.ttf");
 }
+@font-face {
+  font-family: 'MiNecraft';
+  src: url('fonts/Minecraft-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+} @font-face {
+  font-family: 'Minecraft';
+  src: url('fonts/Minecraft-BoldItalic.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+} @font-face {
+  font-family: 'Minecraft';
+  src: url('fonts/Minecraft-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+} @font-face {
+  font-family: 'Minecraaft';
+  src: url('fonts/Minecraft-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} @font-face {
+  font-family: 'Monocraft';
+  src: url('fonts/Monocraft.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+} @font-face {
+  font-family: 'Minecrafter';
+  src: url('fonts/Minecrafter.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} @font-face {
+  font-family: 'Minecrafter Alt';
+  src: url('fonts/MinecrafterAlt.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} @font-face {
+  font-family: 'Minecraft Evenings';
+  src: url('fonts/MinecraftEvenings.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 *{
   margin:0;
   padding: 0;
   font-family: minecraft;
   color:black;
-}
+}  
 body{
   overflow: hidden hidden;
+  background-color: #151320;
+  height: 100vh;
 }
-p{
+#one{
   font-family: minecraft;
-  font-size: 8vw;
+  font-size: 4vw;
   width: auto;
+  text-align: center;
   margin-top: 5vh;
-  margin-left: 9vw;
+  /* margin-left: 9vw; */
+  color: rgb(0, 4, 255);
   word-wrap: break-word;
 }
-
+#two{
+  font-family: minecraft;
+  font-size: 6vw;
+  width: auto;
+  text-align: center;
+  margin-top: 5vh;
+  /* margin-left: 9vw; */
+  color: rgb(255, 0, 21);
+  word-wrap: break-word;
+}
 .main{
   /* margin-left: 32vw; */
   row-gap: 10vh;
@@ -27,7 +89,7 @@ p{
   display: flex;
   flex-direction: column;
   width: 98vw;
-  height: 80vh;
+  height: 80%;
   padding-top: 10%;
 }
 #bg{
@@ -38,16 +100,16 @@ z-index: -1;
     top: 0vh;
 }
 #modbtn{
-  width: 50vw;
-  height: 6vh;
-  
+  width: 50%;
+height: 7%;
   background: #3C8527;
-  border: 0.2rem solid black;
+  border: 3px solid black;
   border-radius: 3px;
-box-shadow: 0px 0px 20px black;
+  box-shadow: 0px 0px 37px 8px rgb(70, 113, 148);
 color: white;
 font-size: 5vw;
 transition: scale 2s;
+font-family: Minecraaft;
 }
 #modbtn:active,#mapbtn:active{
   scale: 0.5;
@@ -56,11 +118,12 @@ h1{
   font-family: minecraft;
 }
 #mapbtn{
-  width: 50vw;
-height: 6vh;
+  width: 50%;
+height: 7%;
+font-family: Minecraaft;
 background: #3C8527;
-border: 0.2rem solid black;
-box-shadow: 0px 0px 20px black;
+border: 3px solid black;
+box-shadow: 0px 0px 37px 8px rgb(53, 160, 97);
 color: white;
 font-size: 5vw;
 border-radius: 3px;
@@ -124,6 +187,7 @@ margin-left:-75vw;
   height: 10vh;
   font-size: 2vw;
   }
+
   nav label{
     float: left;
     margin-left: 1vw;
@@ -145,15 +209,19 @@ padding-top: 0;
   }
   #modbtn{
     width: 40%;
-    height: 15%;
+    height: auto;
+    font-size: 4vw;
+    border: 5px solid black;
   }
   #mapbtn{
     width: 40%;
-height: 15%;
+height: auto;
+font-size: 4vw;
+
+border: 5px solid black;
   }
   p{
     position: relative;
-    margin-left: 14vw;
     margin-top: 14vh;
     font-size: 4em;
 }
@@ -169,4 +237,3 @@ height: 15%;
 label{
  font-size: 5vw;
   }
-

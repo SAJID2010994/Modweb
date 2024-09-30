@@ -8,7 +8,7 @@ var modsinfo;
       var mod=document.getElementsByClassName('mod')
     for (let a = 0; a < modsinfo.length; a++) {
       document.getElementsByClassName('mods-container')[0].innerHTML+=`
-      <div class="mod" onclick="var epass=prompt('Enter password','');if (epass  == '${modsinfo[a].pass}'){document.getElementById('download${a}').click()}else{Swal.fire({icon: 'error',title: 'Wrong password',text: 'You entered wrong password !Password can be found in my video !',footer: 'Video link:<a href=${modsinfo[a].vid}>${modsinfo[a].vid}</a>'})}">
+      <div class="mod" onclick="var epass=prompt('Enter password','');if (epass  == '${modsinfo[a].pass}'){document.getElementById('download${a}').click()}else if(epass  == null){return}else{Swal.fire({icon: 'error',title: 'Wrong password',text: 'You entered wrong password !Password can be found in my video !',footer: 'Video link:<a href=${modsinfo[a].vid}>${modsinfo[a].vid}</a>'})}">
           <img src="${modsinfo[a].thmb}" alt="">
       <label>${modsinfo[a].title}</label>
     
