@@ -177,6 +177,10 @@ label{
 margin-left:-75vw;
  
 }
+#canvas{
+  position: absolute;
+  z-index: -1;
+}
 @media (orientation:landscape) {
   .promotion{
     width: 97vw;
